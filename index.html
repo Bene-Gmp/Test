@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Webseite mit Botsonic Chatbot</title>
+    <title>Meine Website mit Botsonic Chatbot</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -30,11 +30,6 @@
             font-size: 2em;
         }
 
-        p {
-            font-size: 1.2em;
-            color: #555;
-        }
-
         .chatbot-container {
             margin-top: 50px;
             width: 100%;
@@ -52,31 +47,27 @@
     <div class="chatbot-container">
         <p>Hier kannst du mit meinem Chatbot sprechen:</p>
 
-        <!-- Hier den Botsonic Einbettungscode einfügen -->
-
-<script>
-  (function (w, d, s, o, f, js, fjs) {
-    w["botsonic_widget"] = o;
-    w[o] =
-      w[o] ||
-      function () {
-        (w[o].q = w[o].q || []).push(arguments);
-      };
-    (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
-    js.id = o;
-    js.src = f;
-    js.async = 1;
-    fjs.parentNode.insertBefore(js, fjs);
-  })(window, document, "script", "Botsonic", "https://widget.botsonic.com/CDN/botsonic.min.js");
-  Botsonic("init", {
-    serviceBaseUrl: "https://api-azure.botsonic.ai",
-    token: "6980a4e3-af80-4cb5-93a8-a7871c51b542",
-  });
-</script>
-
-
-       
-        <!-- Ende des Botsonic Einbettungscode -->
+        <!-- Botsonic Einbettungscode -->
+        <script>
+          (function (w, d, s, o, f, js, fjs) {
+            w["botsonic_widget"] = o;
+            w[o] =
+              w[o] ||
+              function () {
+                (w[o].q = w[o].q || []).push(arguments);
+              };
+            (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+            js.id = o;
+            js.src = f;
+            js.async = 1;
+            fjs.parentNode.insertBefore(js, fjs);
+          })(window, document, "script", "Botsonic", "https://widget.botsonic.com/CDN/botsonic.min.js");
+          Botsonic("init", {
+            serviceBaseUrl: "https://api-azure.botsonic.ai",
+            token: "6980a4e3-af80-4cb5-93a8-a7871c51b542",
+          });
+        </script>
+        <!-- Ende des Botsonic Einbettungscodes -->
 
     </div>
 
