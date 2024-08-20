@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BotStar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #F9E300;
+        }
+
+        header {
+            background-color: #E3000F;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 4em;
+        }
+
+        .chatbot-container {
+            margin-top: 50px;
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Diese Website wurde als eine Testwebsite erstellt und ist ein Beispiel, wie man den Chatbot zukünftig an Mitarbeiter ausspielen lassen könnte</h1>
+    </header>
+
+    <div class="chatbot-container">
+        <p>Um den Bot auszuprobieren, hier klicken</p>
+
+        <!-- Botsonic Einbettungscode -->
+        <script>
+          (function (w, d, s, o, f, js, fjs) {
+            w["botsonic_widget"] = o;
+            w[o] =
+              w[o] ||
+              function () {
+                (w[o].q = w[o].q || []).push(arguments);
+              };
+            (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+            js.id = o;
+            js.src = f;
+            js.async = 1;
+            fjs.parentNode.insertBefore(js, fjs);
+          })(window, document, "script", "Botsonic", "https://widget.botsonic.com/CDN/botsonic.min.js");
+          Botsonic("init", {
+            serviceBaseUrl: "https://api-azure.botsonic.ai",
+            token: "6980a4e3-af80-4cb5-93a8-a7871c51b542",
+          });
+        </script>
+        <!-- Ende des Botsonic Einbettungscodes -->
+
+    </div>
+
+</body>
+</html>
